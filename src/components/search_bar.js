@@ -20,9 +20,9 @@ class SearchBar extends React.Component{
 
   render() {
 
-    return (
-       <div>
-       <input //controlled components - when user types something, they only triggered event. setState is called and component re-renders and the input value is updated
+    return ( //controlled components - when user types something, they only triggered event. setState is called and component re-renders and the input value is updated
+       <div className="search-bar">
+       <input
           value = {this.state.term}
           onChange={(event) => this.setState({ term: event.target.value})} />
      </div>
